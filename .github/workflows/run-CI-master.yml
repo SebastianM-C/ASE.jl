@@ -3,7 +3,7 @@ name: Run CI on master
 on:
   push:
     branches:
-      - gh-actions-CI
+      - gh-actions
 
 jobs:
   test:
