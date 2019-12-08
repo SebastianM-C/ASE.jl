@@ -50,9 +50,9 @@ const ase_atoms = PyNULL()
 const ase_io    = PyNULL()
 
 function __init__()
-    copy!(ase_build, pyimport_conda("ase.build", "ase"))
-    copy!(ase_atoms, pyimport_conda("ase.atoms", "ase"))
-    copy!(ase_io, pyimport_conda("ase.io", "ase"))
+    copy!(ase_build, pyimport_conda("ase.build", "ase", "rmg"))
+    copy!(ase_atoms, pyimport_conda("ase.atoms", "ase", "rmg"))
+    copy!(ase_io, pyimport_conda("ase.io", "ase", "rmg"))
 end
 
 """
