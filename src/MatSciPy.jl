@@ -20,11 +20,7 @@ module MatSciPy
 
 using PyCall, NeighbourLists
 
-const matscipy_neighbours = PyNULL()
-
-function __init__()
-   copy!(matscipy_neighbours, pyimport_conda("matscipy.neighbours", "matscipy"))
-end
+matscipy_neighbours = pyimport("matscipy.neighbours")
 
 using JuLIP:  cutoff, vecs, cell, JVecF, JVec
 using ASE: ASEAtoms, pyobject

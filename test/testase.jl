@@ -20,7 +20,7 @@ h2("Check neighbourlist without periodicity")
 at = bulk("Al", cubic=true) * 3
 set_pbc!(at, (false,false,false))
 rcut = 1.7 * a0
-nlist = neighbourlist(at, rcut)
+# nlist = neighbourlist(at, rcut)
 
 @info "   ... assemble neighbour list ..."
 # create a neighbourlist via a naive double-loop
